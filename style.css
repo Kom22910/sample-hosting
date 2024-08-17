@@ -1,0 +1,47 @@
+.btn{
+    border: 10px solid rgb(207, 107, 124);
+    background-color: rgb(234, 149, 197);
+
+    padding: 10px 20px;
+    font-size: 30px;
+   margin: 40vh 45vw;
+
+   /* transition-property: transform;
+   transition-duration: 1s;
+   transition-timing-function: ease;
+   transition-delay: 0s; */
+
+   transition: transform 0.8s , background-color 0.5s , color 0.5s;
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+    background-color: greenyellow;
+    color: red;
+}
+
+@keyframes slideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+.btn{
+
+    /* animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+
+    animation: slideinleft 1s ease-in ;
+}
